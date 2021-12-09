@@ -12,7 +12,7 @@
 
         <meta-data
         android:name="com.google.android.geo.API_KEY"
-        android:value="AIzaSyDN6oFAOH5Wqi4sUELUcPAO-4GiwHMFwg0"
+        android:value="AIzaSyDN6oFAOH5Wqi4sUELUcPAO-4GiwHMFwg0"/>
 
         <activity
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode"
@@ -40,8 +40,9 @@
     </application>
 
     <!-- Permissions -->
+        <!-- Geolocation API -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.hardware.location.gps" />
+    <uses-feature android:name="android.hardware.location.gps" />
     <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
